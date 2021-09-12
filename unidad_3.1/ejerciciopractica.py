@@ -1,0 +1,29 @@
+"""
+El programa debe:
+
+pedir en orden el Nombre, apellido, edad y numero de calzado
+
+verificar que cada uno sea el tipo de variable correcto (IMPORTANTE)
+
+en caso verdadero imprimir de la siguiente manera el resultado:
+
+ejemplo
+
+Nombre: Lionel
+
+Apellido: Messi
+
+Edad: 34
+
+Numero de Calzado: 42.5
+
+en caso contrario imprimir error
+"""
+try:
+    nombre=str(input("ingrese su nombre : "))
+    apellido=str(input("ingrese su apellido : "))
+    edad=int (input ("ingrese su edad : "))
+    calzado=float (input("ingres su calzado :"))
+    print(f" su nombre hermoso es : {nombre}\n su apellido perfecto es : {apellido}\n la edad mas cool es : {edad} años\n su talle perfecta es :{calzado} Adidas")
+except:
+    print("los datos ingresados no son validos ")    
