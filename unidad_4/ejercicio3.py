@@ -94,10 +94,28 @@ while True:
                 break 
         print(f"La cantidad de letras {letra} en {palabra} es: {contador_de_letras(letra,palabra)}")
     elif condicion=="2":
-        #HACER
+        while True:
+            palabra= input("Ingrese una palabra: ")
+            if palabra.isalpha():
+                if len(palabra):
+                 break
+        while True:    
+                    palabra_1=input("ingrese otra palabra: ")
+                    if len(palabra)!=(palabra_1):
+                     break
+        print(f"{palabra} no es igual a {palabra_1} : {comparador_de_palabras(palabra,palabra_1)}")        
+
         pass
     elif condicion=="3":
-        #HACER
+    
+        while True:
+            vocales = input("Ingrese una palabra: ")
+            if vocales  :
+                    if len(vocales):
+                        break
+
+        print(f"la cantidad de vocales sacadas son {vocales}: ")            
+                        
         pass
     elif condicion=="4":
         break

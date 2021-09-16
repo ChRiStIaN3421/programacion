@@ -12,7 +12,7 @@ def ordenar_edades():
             personas = int(input('Ingrese la cantidad de personas: '))
             break
         except:
-            print("Ingrese un numero")
+            print("Ingrese un numero por favor")
     edades = []
     for i in range(personas):
         while True:
@@ -21,7 +21,7 @@ def ordenar_edades():
                 edades.append(edadesingresadas)
                 break
             except:
-                print("Ingrese un numero")
+                print("Ingrese un numero por favor")
         
     edades.sort()
     print(f'La edad mayor ingresada es {edades[-1]}\nLa lista completa es: {edades}')
