@@ -7,13 +7,18 @@ Crear una funcion que debe:
 *    Mostrar las materias en orden alfabetico
 *    No deben aparecer y se deben tener en cuenta todos los posibles errores
 """
-def ordenamiento_palabra():
-    listas_materias=[]
+def ordenamiento_de_palabras():
+    lista_materias=[]
     for i in range(5):
-        materia=input("ingrese una materia: ")
-        if not materia.isalpha():
-            print("el dato ingresado es incorrecto")
-            break
-        else:
-           listas_materias.append(materia)
+        while True:
+            materia=input("Ingrese una materia: ")
+            if materia.isalpha():
+                lista_materias.append(materia)
+                lista_materias.sort()
+                break
+            else:
+                print("Datos erroneos")
+    print(lista_materias)
+
+ordenamiento_de_palabras()
         
