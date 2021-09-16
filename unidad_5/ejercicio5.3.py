@@ -17,5 +17,3 @@ def ordenamiento_palabra():
         else:
            listas_materias.append(materia)
         
-        listas_materias.sort()
-        print(f"el ordenamiento de las palabras es: {listas_materias}")       

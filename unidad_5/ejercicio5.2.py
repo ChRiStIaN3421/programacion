@@ -16,6 +16,6 @@ def es_palindromo():
         if palabra_original_lista==palabra_reversa:
             print("OK! es una palabra capicua ")
         else:
-            print("ERROR! no es una palabra capicua")    
+            print("ERROR! no es una palabra capicua")  
 
 es_palindromo()
