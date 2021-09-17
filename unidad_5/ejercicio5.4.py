@@ -18,11 +18,15 @@ def tiempo_de_viaje():
             tiempo_total_viaje=[]
             for i in range(1, tramos+1 ,1):
                 while True:
-                    duracion_tramo=int(input(f"Duracion del tramo N° {i}: "))
-                    if duracion_tramo<0:
-                        print("Ingrese un numero mayor o igual a 0.")
-                    else:
-                        break
+                    try:
+                        duracion_tramo=int(input(f"Duracion del tramo N° {i}: "))
+                        if duracion_tramo<0:
+                            print("Ingrese un numero mayor o igual a 0.")
+                        else:
+                            break
+                    except:
+                        print("error")    
+
                 tiempo_total_viaje +=[duracion_tramo]
             horas, minutos = divmod(sum(tiempo_total_viaje), 60)
             if horas>0:
