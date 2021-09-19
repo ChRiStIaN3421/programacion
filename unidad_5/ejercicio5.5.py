@@ -7,14 +7,28 @@ Crear una funcion que debe:
 *   Mostrar por pantalla la lista resultante.
 *   No deben aparecer y se deben tener en cuenta todos los posibles errores
 """
-def abecedario():
+def eliminar_multiplos_abc():
+    abc="abcdefghijklmnñopqrstuvwxyz"  
+    lista_abecedario=list(abc)
+    while True:
+        numero=input("ingrese un numero (2 o 3 )")
+        if numero=="2" or numero=="3":
+    
+         break
+    
+    lista_a_eliminar=[]
+    for i in range (int(numero),len(lista_abecedario)+1,int (numero)):
+        lista_a_eliminar.append(lista_abecedario[i-1])
+        print(lista_abecedario[i-1])
 
-    return list(string.ascii_lowercase)
-print(list())
+    for i in lista_a_eliminar:
+        if i in lista_abecedario:
+            lista_abecedario.remove(i)
 
-while True:
-    try:
-        if (numero ):2 or 3  
-        numero=int(input("ingrese un numero: "))
-    except:
-        print("Dato erroneo")    
+    print(f"el abecedario sin las letras multiplo de {numero}es:\n{lista_abecedario}")        
+
+    #print (len(lista_abecedario))    
+
+
+eliminar_multiplos_abc()
+   
